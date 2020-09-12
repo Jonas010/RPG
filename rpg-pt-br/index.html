@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- titulo -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8">
+	<title>REGISTRO</title>
+	<link rel="stylesheet" type="text/css" href="./css/login.css">
+</head>
+<body>
+
+<img src="img/D&D.png">
+<h6>poor version</h6>
+
+<!-- começo do registro -->
+<h1>Bem-vindo</h1><br>
+<p>como se chama (nick):</p>
+
+<form action="game.html">
+	<input type="text" name="nome" id="name" placeholder="nome"><br><br>
+
+	<p >qual sua classe?</p>
+
+	<input type="radio" id="mago" name="class" value="mago" onchange="check()">
+	<label for="mago">Mago</label><br>
+	<input type="radio" id="arqueiro" name="class" value="arqueiro" onchange="check()">
+	<label for="arqueiro">arqueiro</label><br>
+	<input type="radio" id="guerreiro" name="class" value="guerreiro" onchange="check()">
+	<label for="guerreiro">guerreiro</label><br><br>
+
+	<div id="info">
+		<h2>classe</h2>
+		<div>
+			<p id="text">
+				Aqui é onde você pode saber um pouco mais sobre as classes em que vai jogar.
+			</p>
+		</div>
+	</div>
+
+	<br>
+
+	<p >Tudo pronto,so falta salvar!</p>
+	
+	<button id="btn">salvar</button>
+</form>
+
+<script src="./script/script.js"></script>
+
+</body>
+</html>
