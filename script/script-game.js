@@ -50,7 +50,7 @@ if (classe == null) {
   var item = "Livro do conhecimento";
 
   var end = " Você usa do livro do conhecimento para fazer o dragão entender sua língua "+
-  "e assim,você se torna um menbro do clã draconiano,Fim.";
+  "e assim,você se torna um membro do clã draconiano...Fim.";
 
   var img = document.createElement('img');
   img.src="img/campones.png";
