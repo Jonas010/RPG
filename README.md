@@ -9,4 +9,4 @@ Um RPG simples,baseado em **Dungeons&Dragons**.
 **_-Guerreiro;_**
 **_-Camponês._** _(que você joga se não clicar em nenhuma opção)_
 
-> Você tem que baixar o arquivo pra jogar.
+> Divirta-se
