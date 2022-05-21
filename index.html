@@ -9,42 +9,55 @@
 </head>
 <body>
 
-<img src="img/D&D.png">
-<h6>poor version</h6>
-
-<!-- começo do registro -->
-<h1>Bem-vindo</h1><br>
-<p>como se chama (nick):</p>
-
-<form action="game.html">
-	<input type="text" name="nome" id="name" placeholder="nome"><br><br>
-
-	<p >qual sua classe?</p>
-
-	<input type="radio" id="mago" name="class" value="mago" onchange="check()">
-	<label for="mago">Mago</label><br>
-	<input type="radio" id="arqueiro" name="class" value="arqueiro" onchange="check()">
-	<label for="arqueiro">arqueiro</label><br>
-	<input type="radio" id="guerreiro" name="class" value="guerreiro" onchange="check()">
-	<label for="guerreiro">guerreiro</label><br><br>
-
-	<div id="info">
-		<h2>classe</h2>
-		<div>
-			<p id="text">
-				Aqui é onde você pode saber um pouco mais sobre as classes em que vai jogar.
-			</p>
-		</div>
-	</div>
-
-	<br>
-
-	<p >Tudo pronto,so falta salvar!</p>
+<header>
+	<img src="img/D&D.png">
+</header>
+<main>
 	
-	<button id="btn">salvar</button>
-</form>
+	<form action="game.html">
+		<div class="chars">
+			<input type="radio" name="class" value="guerreiro" id="warrior" onchange="click()">
+			<label for="warrior">
+				<div class="card">
+					<img src="img/warrior.png">
+					<div>
+						<h2>Guerreiro</h2>
+						<p>Um bravo guerreiro capaz de dar sua vida pelo objetivo.</p>
+					</div>
+				</div>
+			</label>
+		
+			<input type="radio" name="class" value="arqueiro" id="archer" onchange="click()">
+			<label for="archer">
+				<div class="card">
+					<img src="img/archer.png">
+					<div>
+						<h2>Arqueiro</h2>
+						<p>Com a coragem e conhecimanto, ele luta pela justiça que acredita.</p>
+					</div>
+				</div>
+			</label>
+		
+			<input type="radio" name="class" value="mago" id="mago" onchange="click()">
+			<label for="mago">
+				<div class="card">
+					<img src="img/mago.png">
+					<div>
+						<h2>Mago</h2>
+						<p>Portador de uma sabedoria invejável, ele domina os elementos a volta.</p>
+					</div>
+				</div>
+			</label>
+				
+		</div> <br><br><br>
+		
+		<input type="submit" value="send" id="btn" onclick="check()">
 
-<script src="./script/script.js"></script>
+	</form>
+	
+</main>
+
+<script src="script/script.js"></script>
 
 </body>
 </html>

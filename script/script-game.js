@@ -3,8 +3,6 @@ const optionButtonsElement = document.getElementById('option-buttons')
 
 //esses de baixo são parte do meu código.
 
-const nome = new URLSearchParams(location.search).get('nome');
-
 var classe = new URLSearchParams(location.search).get('class');
 
 const char = document.querySelector('.story');
@@ -50,7 +48,7 @@ if (classe == null) {
   var item = "Livro do conhecimento";
 
   var end = " Você usa do livro do conhecimento para fazer o dragão entender sua língua "+
-  "e assim,você se torna um membro do clã draconiano...Fim.";
+  "e assim,você se torna um menbro do clã draconiano,Fim.";
 
   var img = document.createElement('img');
   img.src="img/campones.png";
@@ -100,10 +98,8 @@ function selectOption(option) {
 const textNodes = [
   {
     id: 1,
-    text: nome+',hein... Nome interessante para um '+classe+'.',
-    //ao longo do caminho vou ter que colocar as constantes dessa forma
-    //não muda muita coisa no projeto em si,mas pode ser que quem vá ler
-    // não goste muito dos "pequenos ajustes" que eu fiz.
+    text:'Interessante,um '+classe+'.',
+
     options: [
       {
         text: 'Próximo',
@@ -111,7 +107,7 @@ const textNodes = [
         nextText: 2
       }
     ]
-  }, // coloca uma virgula para indicar que acabou.
+  },
   {
     id: 2,
     text: 'Deixa eu te explicar umas coisas por aqui...',
